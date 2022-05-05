@@ -16,8 +16,7 @@ export const HeroSectionSchema = type('Hero', {
 					},
 					{
 						initialValue: 'primary',
-						optional: false,
-						width: 0.3
+						optional: false
 					}
 				),
 				label: text('Label', {
