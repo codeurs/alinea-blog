@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build": "yarn gen:types && alinea generate && next build",
+		"build": "alinea generate && next build",
 		"start": "next start",
 		"lint": "next lint"
 	},
