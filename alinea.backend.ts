@@ -21,7 +21,7 @@ function createServer() {
 		githubAuthToken: process.env.GITHUB_TOKEN!,
 		owner: 'alineacms',
 		repo: 'alinea',
-		branch: 'main',
+		branch: 'master',
 		author: {
 			name: 'Ben',
 			email: 'ben@codeurs.be'
