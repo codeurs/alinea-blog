@@ -9,15 +9,10 @@ import {createStore} from './.alinea'
 import {config} from './.alinea/config'
 
 function createServer() {
-	console.log('Create server')
-
 	const drafts = new RedisDrafts({
 		client: new Redis(process.env.REDIS_DSN as string)
 	})
-	const isProduction = process.env.NODE_ENV === 'production'
-	const dashboardUrl = isProduction
-		? 'https://alinea.sh/admin'
-		: 'http://localhost:3000/admin'
+	const dashboardUrl = process.env.APP_URL + '/admin'
 
 	const data = new GithubData({
 		config,
@@ -34,7 +29,7 @@ function createServer() {
 	})
 	const auth = new PasswordLessAuth({
 		dashboardUrl,
-		subject: 'Login',
+		subject: 'Login to alinea blog',
 		from: `"${process.env.MAIL_FROM_NAME}" <${process.env.MAIL_FROM_ADDRESS}>`,
 		transporter: createTransport({
 			host: process.env.MAIL_HOST,
