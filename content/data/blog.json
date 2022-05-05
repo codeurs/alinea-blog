@@ -2,7 +2,35 @@
   "id": "28kKPK8g4XHE4BgkOKhCqDj99pO",
   "type": "Page",
   "root": "data",
+  "index": "Zr",
   "title": "Blog",
-  "sections": [],
-  "parents": []
+  "parents": [],
+  "sections": [
+    {
+      "id": "28lRG71UeSotB4fJylrBkc8lW06",
+      "index": "a0",
+      "type": "Hero",
+      "title": "Blog",
+      "intro": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Check out these awsome blog posts"
+            }
+          ]
+        }
+      ],
+      "image": [
+        {
+          "id": "28lRHsUBmpw9VnfFECibCfpcsDt",
+          "index": "a0",
+          "type": "entry",
+          "entry": "28l21KYjX8nROaQBSovnSXd3Jk1"
+        }
+      ],
+      "buttons": []
+    }
+  ]
 }

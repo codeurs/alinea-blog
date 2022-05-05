@@ -10,7 +10,8 @@ export const Button: React.FC<
 		{
 			primary:
 				'text-white bg-indigo-500 border-0  focus:outline-none hover:bg-indigo-600',
-			secondary: ''
+			secondary:
+				'text-gray-700 bg-gray-100 border-0 focus:outline-none hover:bg-gray-200'
 		}[mode]
 	].join(' ')
 
