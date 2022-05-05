@@ -9,9 +9,13 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@alinea/auth.passwordless": "^0.0.11",
+		"@alinea/backend": "^0.0.11",
+		"@types/nodemailer": "^6.4.4",
 		"alinea": "^0.0.11",
 		"autoprefixer": "^10.4.7",
 		"blurhash": "^1.1.5",
+		"ioredis": "^5.0.4",
 		"next": "12.1.6",
 		"nodemailer": "^6.7.5",
 		"react": "18.1.0",

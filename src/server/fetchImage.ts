@@ -6,7 +6,6 @@ export type ImageData = {
 	alt: string
 	width: number
 	height: number
-	blurHash?: string
 }
 
 export const fetchImages = async (
@@ -24,9 +23,7 @@ export const fetchImages = async (
 		src: image.location,
 		alt: '',
 		width: image.width!,
-		height: image.height!,
-		hash: image.hash,
-		blurHash: image.blurHash!
+		height: image.height!
 	}))
 }
 
