@@ -19,8 +19,8 @@ function createServer() {
 		loader: JsonLoader,
 		rootDir: 'apps/web',
 		githubAuthToken: process.env.GITHUB_TOKEN!,
-		owner: 'alineacms',
-		repo: 'alinea',
+		owner: 'codeurs',
+		repo: 'alinea-blog',
 		branch: 'master',
 		author: {
 			name: 'Ben',
