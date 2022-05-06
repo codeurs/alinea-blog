@@ -1,8 +1,8 @@
 {
   "id": "28kKPK8g4XHE4BgkOKhCqDj99pO",
-  "type": "Page",
+  "type": "Blog",
   "root": "data",
-  "index": "Zr",
+  "index": "Zt",
   "title": "Blog",
   "parents": [],
   "sections": [
@@ -31,6 +31,12 @@
         }
       ],
       "buttons": []
+    },
+    {
+      "id": "28lhsXPYmVwdLQDjs1H7JChlUoa",
+      "index": "a1",
+      "type": "Posts",
+      "title": "Posts"
     }
   ]
 }

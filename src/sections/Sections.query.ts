@@ -2,6 +2,7 @@ import {Pages} from '../server/pages'
 import {contentSectionQuery} from './content/ContentSection.query'
 import {ctaSectionQuery} from './cta/CtaSection.query'
 import {heroSectionQuery} from './hero/HeroSection.query'
+import {postsSectionQuery} from './posts/PostsSection.query'
 import {SectionsSchema} from './Sections.schema'
 import {testimonialsSectionQuery} from './testimonials/TestimonialsSection.query'
 
@@ -22,6 +23,8 @@ export async function sectionQuery(
 			return {...section, ...(await testimonialsSectionQuery(pages, section))}
 		case 'CTA':
 			return {...section, ...(await ctaSectionQuery(pages, section))}
+		case 'Posts':
+			return {...section, ...(await postsSectionQuery(pages, section))}
 		default:
 			return section
 	}

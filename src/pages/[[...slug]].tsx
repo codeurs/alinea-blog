@@ -2,7 +2,9 @@ import {GetStaticPaths, GetStaticProps, NextPage} from 'next'
 import {Sections} from '../sections/Sections'
 import {sectionsQuery} from '../sections/Sections.query'
 import {pages, Pages} from '../server/pages'
-import {Page} from '../server/schema'
+import {Article, Blog, Page} from '../server/schema'
+
+const allowedTypes = ['Page', 'Blog', 'Article']
 
 const AlineaPageView: NextPage<{page: PageData}> = ({page}) => {
 	return (
@@ -14,7 +16,7 @@ const AlineaPageView: NextPage<{page: PageData}> = ({page}) => {
 
 export default AlineaPageView
 
-async function pageQuery(pages: Pages, page: Page) {
+async function pageQuery(pages: Pages, page: Page | Blog | Article) {
 	return {
 		...page,
 		sections: await sectionsQuery(pages, page.sections)
@@ -25,7 +27,7 @@ export type PageData = Awaited<ReturnType<typeof pageQuery>>
 
 export const getStaticPaths: GetStaticPaths = async () => {
 	const urls = await pages
-		.findMany((page) => page.type.isIn(['Page']))
+		.findMany((page) => page.type.isIn(allowedTypes))
 		.select((page) => page.url)
 
 	return {
@@ -38,12 +40,10 @@ export const getStaticProps: GetStaticProps<
 	{slug: Array<string>}
 > = async (context) => {
 	const slug = '/' + (context.params?.slug || []).join('/')
-	const page = await pages
-		.findFirst((page) => page.url.is(slug))
-		.whereType(Page)
+	const page = await pages.findFirst((page) => page.url.is(slug))
 
-	if (!page) return {notFound: true}
-	const pageData = await pageQuery(pages, page)
+	if (!page || !allowedTypes.includes(page.type)) return {notFound: true}
+	const pageData = await pageQuery(pages, page as Page | Blog | Article)
 
 	return {props: {page: pageData}}
 }

@@ -40,7 +40,6 @@ function createServer() {
 		}),
 		jwtSecret: process.env.JWT_SECRET!,
 		async isUser(email: string) {
-			console.log(email)
 			return email.endsWith('@codeurs.be')
 		}
 	})

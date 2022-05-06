@@ -1,6 +1,7 @@
 import {ContentSection} from './content/ContentSection'
 import {CtaSection} from './cta/CtaSection'
 import {HeroSection} from './hero/HeroSection'
+import {PostsSection} from './posts/PostsSection'
 import {SectionData, SectionsData} from './Sections.query'
 import {TestimonialsSection} from './testimonials/TestimonialsSection'
 
@@ -23,6 +24,8 @@ export const Section: React.FC<{section: SectionData}> = ({section}) => {
 			return <TestimonialsSection {...section} />
 		case 'CTA':
 			return <CtaSection {...section} />
+		case 'Posts':
+			return <PostsSection {...section} />
 	}
 	return null
 }

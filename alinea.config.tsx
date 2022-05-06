@@ -6,6 +6,7 @@ import {
 	path,
 	root,
 	schema,
+	select,
 	text,
 	type,
 	workspace
@@ -14,7 +15,7 @@ import {SectionsSchema} from './src/sections/Sections.schema'
 
 export const config = createConfig({
 	workspaces: {
-		main: workspace('Example', {
+		main: workspace('Alinea blog', {
 			source: './content',
 			mediaDir: './public',
 			schema: schema({
@@ -23,10 +24,27 @@ export const config = createConfig({
 					title: text('Title'),
 					path: path('Path'),
 					sections: SectionsSchema
+				}),
+				Blog: type('Blog', {
+					title: text('Title'),
+					path: path('Path'),
+					sections: SectionsSchema
+				}).configure({isContainer: true, contains: ['Article']}),
+				Article: type('Article', {
+					title: text('Title'),
+					path: path('Path'),
+					date: text('Date'),
+					tag: select('Tag', {
+						World: 'World',
+						Analysis: 'Analysis',
+						Lifestyle: 'Lifestyle',
+						Wedding: 'Wedding'
+					}),
+					sections: SectionsSchema
 				})
 			}),
 			roots: {
-				data: root('Example project', {
+				data: root('Website', {
 					icon: IcRoundInsertDriveFile,
 					contains: ['Page']
 				}),
