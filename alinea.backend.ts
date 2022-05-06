@@ -12,15 +12,21 @@ function createServer() {
 	const drafts = new RedisDrafts({
 		client: new Redis(process.env.REDIS_DSN as string)
 	})
-	const dashboardUrl = process.env.APP_URL + '/admin'
+	const dashboardUrl = process.env.VERCEL_URL
+		? `https://${process.env.VERCEL_URL}/admin`
+		: `${process.env.APP_URL || 'http://localhost:3000'}/admin`
+
+	const owner = process.env.GITHUB_OWNER || process.env.VERCEL_GIT_REPO_OWNER!
+	const branch = process.env.GITHUB_BRANCH || process.env.VERCEL_GIT_COMMIT_REF!
+	const repo = process.env.GITHUB_REPO || process.env.VERCEL_GIT_REPO_SLUG!
 
 	const data = new GithubData({
 		config,
 		loader: JsonLoader,
 		githubAuthToken: process.env.GITHUB_TOKEN!,
-		owner: process.env.GITHUB_OWNER!,
-		repo: process.env.GITHUB_REPO!,
-		branch: process.env.GITHUB_BRANCH!,
+		owner,
+		repo,
+		branch,
 		author: {
 			name: 'David',
 			email: 'david@codeurs.be'
