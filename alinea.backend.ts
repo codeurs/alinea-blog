@@ -18,9 +18,9 @@ function createServer() {
 		config,
 		loader: JsonLoader,
 		githubAuthToken: process.env.GITHUB_TOKEN!,
-		owner: 'codeurs',
-		repo: 'alinea-blog',
-		branch: 'master',
+		owner: process.env.GITHUB_OWNER!,
+		repo: process.env.GITHUB_REPO!,
+		branch: process.env.GITHUB_BRANCH!,
 		author: {
 			name: 'David',
 			email: 'david@codeurs.be'
