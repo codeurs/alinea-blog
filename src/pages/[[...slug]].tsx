@@ -1,4 +1,5 @@
 import {GetStaticPaths, GetStaticProps, NextPage} from 'next'
+import {backend} from '../../alinea.backend'
 import {Sections} from '../sections/Sections'
 import {sectionsQuery} from '../sections/Sections.query'
 import {pages, Pages} from '../server/pages'
@@ -39,6 +40,7 @@ export const getStaticProps: GetStaticProps<
 	React.ComponentProps<typeof AlineaPageView>,
 	{slug: Array<string>}
 > = async (context) => {
+	const pages = backend.loadPages('main', context.previewData as string)
 	const slug = '/' + (context.params?.slug || []).join('/')
 	const page = await pages.findFirst((page) => page.url.is(slug))
 
