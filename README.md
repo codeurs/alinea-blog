@@ -1,34 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# A blog example using Next.js and Alinea
 
-## Getting Started
+This is a [Next.js](https://nextjs.org/) + [Alinea](https://alinea.sh/) starter blog project. Showcasing how to use the Alinea CMS to store and update data.
 
-First, run the development server:
+The project is fully setup with [Typescript](https://www.typescriptlang.org/) and uses [Tailblocks](https://tailblocks.cc/) for layout.
+
+## Demo
+
+### [https://alinea-blog.vercel.app/](https://alinea-blog.vercel.app/)
+
+## Start off with a local Alinea instance
+
+Zero configuration is required if you want to get started with this project:
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the website.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn alinea serve
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Open [http://localhost:4500](http://localhost:4500) to see the Alinea CMS and make changes to the content of your site.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Deploy your own
 
-## Learn More
+Once you have access to the environment variable listed below, deploy the example using Vercel:
 
-To learn more about Next.js, take a look at the following resources:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcodeurs%2Falinea-blog)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Environment variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The following environment variables will need to be configured to have a functional Alinea CMS instance:
 
-## Deploy on Vercel
+- Setup the SMTP mailer module: `MAIL_FROM_NAME`, `MAIL_FROM_ADDRESS`, `MAIL_HOST`, `MAIL_PORT`, `MAIL_USERNAME`, `MAIL_PASSWORD`. This is required to enable users to login to the Alinea backend. This example uses passwordless email authenthication.
+- Create a `ALINEA_USERS` consisting of a comma separated file with email addresses of users allowed to login to the Alinea CMS.
+- Generate a [`GITHUB_TOKEN`](https://github.com/settings/tokens/new). This is required to persist changed made in the Alinea CMS to your github repo.
+- Generate a [`REDIS_DSN`]. This is required to temporarily store draft versions in the Alinea CMS. A free redis path can easily be obtained from [upstash.com](https://upstash.com/).
+- Create a random `JWT_SECRET` string
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+All these values are used in the [alinea.backend.ts](https://github.com/codeurs/alinea-blog/blob/master/alinea.backend.ts) file. Different backend systems are available and can easily be configured by cloning the starter project.
