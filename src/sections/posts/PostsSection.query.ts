@@ -7,7 +7,8 @@ export async function postsSectionQuery(
 	pages: Pages,
 	block: PostsSectionSchema
 ) {
-	const posts = await pages.all().skip(0).take(5).whereType(Article)
+	const posts = await await pages.all().whereType(Article)
+	posts.sort((a, b) => a.index.localeCompare(b.index)).slice(0, 5)
 
 	return {
 		...block,
