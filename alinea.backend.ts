@@ -40,7 +40,8 @@ function createServer() {
 		}),
 		jwtSecret: process.env.JWT_SECRET!,
 		async isUser(email: string) {
-			return email.endsWith('@codeurs.be')
+			const allowed = (process.env.ALINEA_USERS || '')?.split(',')
+			return allowed.includes(email)
 		}
 	})
 	return new Server({
