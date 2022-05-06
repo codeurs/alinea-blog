@@ -2,7 +2,7 @@
   "id": "28k7gUV4FYXZ3N8BtQpBczaQDHI",
   "type": "Page",
   "root": "data",
-  "index": "Zs",
+  "index": "Zq",
   "title": "Home",
   "parents": [],
   "sections": [
@@ -10,7 +10,7 @@
       "id": "28kRr3cclRd4bjU7DtjwZ9G6A0Z",
       "index": "a0",
       "type": "Hero",
-      "title": "Home alinea blog3",
+      "title": "Home alinea blog",
       "intro": [
         {
           "type": "paragraph",
