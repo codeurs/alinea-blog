@@ -29,7 +29,7 @@ function createServer() {
 	const auth = new PasswordLessAuth({
 		dashboardUrl,
 		subject: 'Login to alinea blog',
-		from: `"${process.env.MAIL_FROM_NAME}" <${process.env.MAIL_FROM_ADDRESS}>`,
+		from: `"Alinea CMS" <${process.env.MAIL_FROM_ADDRESS}>`,
 		transporter: createTransport({
 			host: process.env.MAIL_HOST,
 			port: Number(process.env.MAIL_PORT),
