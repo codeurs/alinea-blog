@@ -22,8 +22,8 @@ function createServer() {
 		repo: 'alinea-blog',
 		branch: 'master',
 		author: {
-			name: 'Ben',
-			email: 'ben@codeurs.be'
+			name: 'David',
+			email: 'david@codeurs.be'
 		}
 	})
 	const auth = new PasswordLessAuth({
