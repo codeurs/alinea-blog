@@ -28,7 +28,7 @@ Open [http://localhost:4500](http://localhost:4500) to see the Alinea CMS and ma
 
 Once you have access to the environment variable listed below, deploy the example using Vercel:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcodeurs%2Falinea-blog&env=MAIL_FROM_ADDRESS,MAIL_HOST,MAIL_PORT,MAIL_USERNAME,MAIL_PASSWORD,APP_URL,ALINEA_USERS,GITHUB_TOKEN,GITHUB_OWNER,GITHUB_REPO,GITHUB_BRANCH,REDIS_DSN,JWT_SECRET&envDescription=Required%20to%20setup%20the%20Alinea%20CMS&envLink=https%3A%2F%2Fgithub.com%2Fcodeurs%2Falinea-blog%23environment-variables)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcodeurs%2Falinea-blog&env=MAIL_FROM_ADDRESS,MAIL_HOST,MAIL_PORT,MAIL_USERNAME,MAIL_PASSWORD,ALINEA_USERS,GITHUB_TOKEN,REDIS_DSN,JWT_SECRET&envDescription=Required%20to%20setup%20the%20Alinea%20CMS&envLink=https%3A%2F%2Fgithub.com%2Fcodeurs%2Falinea-blog%23environment-variables)
 
 ### Environment variables
 
