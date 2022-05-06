@@ -4,6 +4,7 @@ import {ContentSectionSchema} from './content/ContentSection.schema'
 import {CtaSectionSchema} from './cta/CtaSection.schema'
 import {HeroSectionSchema} from './hero/HeroSection.schema'
 import {PostsSectionSchema} from './posts/PostsSection.schema'
+import {RelatedSectionSchema} from './related/RelatedSection.schema'
 import {TestimonialsSectionSchema} from './testimonials/TestimonialsSection.schema'
 
 export const SectionsSchema = list('Sections', {
@@ -12,7 +13,8 @@ export const SectionsSchema = list('Sections', {
 		CTA: CtaSectionSchema,
 		Content: ContentSectionSchema,
 		Testimonials: TestimonialsSectionSchema,
-		Posts: PostsSectionSchema
+		Posts: PostsSectionSchema,
+		Related: RelatedSectionSchema
 	})
 })
 

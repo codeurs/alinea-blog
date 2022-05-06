@@ -1,18 +1,18 @@
 import {Pages} from '../../server/pages'
 import {Article} from '../../server/schema'
 import {HeroSectionSchema} from '../hero/HeroSection.schema'
-import {PostsSectionSchema} from './PostsSection.schema'
+import {RelatedSectionSchema} from './RelatedSection.schema'
 
-export async function postsSectionQuery(
+export async function relatedSectionQuery(
 	pages: Pages,
-	block: PostsSectionSchema
+	block: RelatedSectionSchema
 ) {
 	const posts = await pages.all().whereType(Article)
 	posts.sort((a, b) => a.index.localeCompare(b.index))
 
 	return {
 		...block,
-		posts: posts.slice(0, 6).map((post) => {
+		posts: posts.slice(0, 2).map((post) => {
 			const hero = post.sections.find(
 				(section) => section.type === 'Hero'
 			) as HeroSectionSchema
@@ -29,4 +29,4 @@ export async function postsSectionQuery(
 	}
 }
 
-export type PostsSectionData = Awaited<ReturnType<typeof postsSectionQuery>>
+export type RelatedSectionData = Awaited<ReturnType<typeof relatedSectionQuery>>
