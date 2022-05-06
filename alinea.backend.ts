@@ -17,7 +17,6 @@ function createServer() {
 	const data = new GithubData({
 		config,
 		loader: JsonLoader,
-		rootDir: 'apps/web',
 		githubAuthToken: process.env.GITHUB_TOKEN!,
 		owner: 'codeurs',
 		repo: 'alinea-blog',
