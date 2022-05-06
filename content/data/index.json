@@ -1,296 +1,296 @@
 {
-  "id": "28k7gUV4FYXZ3N8BtQpBczaQDHI",
-  "type": "Page",
-  "root": "data",
-  "index": "Zs",
-  "title": "Home",
-  "parents": [],
-  "sections": [
-    {
-      "id": "28kRr3cclRd4bjU7DtjwZ9G6A0Z",
-      "index": "a0",
-      "type": "Hero",
-      "title": "Alinea sample blog",
-      "intro": [
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "text": "Heirloom echo park mlkshk tote bag selvage hot chicken authentic "
-            },
-            {
-              "type": "text",
-              "text": "tumeric truffaut",
-              "marks": [
-                {
-                  "type": "bold"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": " hexagon try-hard chambray."
-            },
-            {
-              "type": "text",
-              "text": "pitchfork pour-over",
-              "marks": [
-                {
-                  "type": "bold"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": " freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag."
-            }
-          ]
-        }
-      ],
-      "image": [
-        {
-          "id": "28l2Oi13NLWXS4mtrfS4K6Al706",
-          "index": "a0",
-          "type": "entry",
-          "entry": "28kiNDdPqFH9JDrxOQTiHPX46VY"
-        }
-      ],
-      "buttons": [
-        {
-          "id": "28lBF2Jfjmqbtq8qvJAlGE95sZT",
-          "index": "a0",
-          "type": "CTA",
-          "mode": "primary",
-          "label": "Home",
-          "link": [
-            {
-              "id": "28lBFNNkKYccdyFm3yNobWuIoHA",
-              "index": "a0",
-              "type": "entry",
-              "entry": "28k7gUV4FYXZ3N8BtQpBczaQDHI"
-            }
-          ]
-        },
-        {
-          "id": "28lBFaEUvuu6NDm756N7FOCt7OW",
-          "index": "a1",
-          "type": "CTA",
-          "mode": "secondary",
-          "label": "Blog",
-          "link": [
-            {
-              "id": "28lBFq5cxdHvNPb4lhvhsaITtm2",
-              "index": "a0",
-              "type": "entry",
-              "entry": "28kKPK8g4XHE4BgkOKhCqDj99pO"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "28l2ZzBujjeOpNWGhttT2LQLixp",
-      "index": "a1",
-      "type": "Content",
-      "text": [
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "text": "Heirloom echo park mlkshk tote bag selvage hot chicken authentic "
-            },
-            {
-              "type": "text",
-              "text": "tumeric truffaut",
-              "marks": [
-                {
-                  "type": "bold"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": " hexagon try-hard chambray."
-            },
-            {
-              "type": "text",
-              "text": "pitchfork pour-over",
-              "marks": [
-                {
-                  "type": "bold"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": " freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag."
-            }
-          ]
-        },
-        {
-          "id": "28l2azqDj78g1ohYlSU1txarzgV",
-          "type": "ImageBlock",
-          "image": [
-            {
-              "id": "28l2bMhabzRN76j8pWlxYfRACQQ",
-              "index": "a0",
-              "type": "entry",
-              "entry": "28l21KYjX8nROaQBSovnSXd3Jk1"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "text": "Heirloom echo park mlkshk tote bag selvage hot chicken authentic "
-            },
-            {
-              "type": "text",
-              "text": "tumeric truffaut",
-              "marks": [
-                {
-                  "type": "bold"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": " hexagon try-hard chambray."
-            },
-            {
-              "type": "text",
-              "text": "pitchfork pour-over",
-              "marks": [
-                {
-                  "type": "bold"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "text": " freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag."
-            }
-          ]
-        },
-        {
-          "id": "28l5xzs3nRmiTJQXVvZYLr2gPVQ",
-          "type": "ButtonBlock",
-          "label": "Visit our blog",
-          "link": [
-            {
-              "id": "28l8DDJEF7zEJnBLhqNqFcDZyJs",
-              "index": "a0",
-              "type": "entry",
-              "entry": "28kKPK8g4XHE4BgkOKhCqDj99pO"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "28lFQKtYXPffgk3CMA6zh1GSU1G",
-      "index": "a2",
-      "type": "Testimonials",
-      "title": "Testimonials",
-      "testimonials": [
-        {
-          "id": "28lGG4S3uXEoHKij9joZ5lLszO0",
-          "index": "a0",
-          "type": "Testimonial",
-          "quote": [
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90s microdosing. "
-                },
-                {
-                  "type": "text",
-                  "text": "Tacos pinterest fanny pack",
-                  "marks": [
-                    {
-                      "type": "italic"
-                    }
-                  ]
-                },
-                {
-                  "type": "text",
-                  "text": " venmo, post-ironic heirloom try-hard pabst authentic iceland."
-                }
-              ]
-            }
-          ],
-          "name": "Holden Caulfield",
-          "role": "UI DEVELOPER",
-          "avatar": [
-            {
-              "id": "28lGaVn6GPpf9RfvfZb5lRl5RQQ",
-              "index": "a0",
-              "type": "entry",
-              "entry": "28lGab7pDDQubsaLBtZexAuEjzW"
-            }
-          ]
-        },
-        {
-          "id": "28lJyIj9aPGjmL686nP4oplBUJO",
-          "index": "a1",
-          "type": "Testimonial",
-          "quote": [
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "type": "text",
-                  "text": "Nunc sed turpis nec lorem pellentesque dapibus eget at ligula. Morbi convallis eros egestas est ullamcorper gravida. "
-                },
-                {
-                  "type": "text",
-                  "text": "Donec lacinia",
-                  "marks": [
-                    {
-                      "type": "bold"
-                    }
-                  ]
-                },
-                {
-                  "type": "text",
-                  "text": " nibh nec tristique lacinia. Suspendisse id ligula nec magna tincidunt venenatis."
-                }
-              ]
-            }
-          ],
-          "name": "Alper Kamu",
-          "role": "DESIGNER",
-          "avatar": [
-            {
-              "id": "28lMiDVAD7QPTqv6bNlBunjtt77",
-              "index": "a0",
-              "type": "entry",
-              "entry": "28lJzSLhvgnFXQDYTZTUwa37Zmg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "28lFQWwlmOwHpGoHAwsGwBmnTsH",
-      "index": "a3",
-      "type": "CTA",
-      "title": "Slow-carb next level shoindxgoitch ethical authentic, scenester sriracha forage.",
-      "label": "Blog",
-      "link": [
-        {
-          "id": "28lONGVC5NYlEtuKahSck4YXKuV",
-          "index": "a0",
-          "type": "entry",
-          "entry": "28kKPK8g4XHE4BgkOKhCqDj99pO"
-        }
-      ]
-    }
-  ]
+	"id": "28k7gUV4FYXZ3N8BtQpBczaQDHI",
+	"type": "Page",
+	"root": "data",
+	"index": "Zq",
+	"title": "Home",
+	"parents": [],
+	"sections": [
+		{
+			"id": "28kRr3cclRd4bjU7DtjwZ9G6A0Z",
+			"index": "a0",
+			"type": "Hero",
+			"title": "Home alinea blog",
+			"intro": [
+				{
+					"type": "paragraph",
+					"content": [
+						{
+							"type": "text",
+							"text": "Heirloom echo park mlkshk tote bag selvage hot chicken authentic "
+						},
+						{
+							"type": "text",
+							"text": "tumeric truffaut",
+							"marks": [
+								{
+									"type": "bold"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " hexagon try-hard chambray."
+						},
+						{
+							"type": "text",
+							"text": "pitchfork pour-over",
+							"marks": [
+								{
+									"type": "bold"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag."
+						}
+					]
+				}
+			],
+			"image": [
+				{
+					"id": "28l2Oi13NLWXS4mtrfS4K6Al706",
+					"index": "a0",
+					"type": "entry",
+					"entry": "28kiNDdPqFH9JDrxOQTiHPX46VY"
+				}
+			],
+			"buttons": [
+				{
+					"id": "28lBF2Jfjmqbtq8qvJAlGE95sZT",
+					"index": "a0",
+					"type": "CTA",
+					"mode": "primary",
+					"label": "Home",
+					"link": [
+						{
+							"id": "28lBFNNkKYccdyFm3yNobWuIoHA",
+							"index": "a0",
+							"type": "entry",
+							"entry": "28k7gUV4FYXZ3N8BtQpBczaQDHI"
+						}
+					]
+				},
+				{
+					"id": "28lBFaEUvuu6NDm756N7FOCt7OW",
+					"index": "a1",
+					"type": "CTA",
+					"mode": "secondary",
+					"label": "Blog",
+					"link": [
+						{
+							"id": "28lBFq5cxdHvNPb4lhvhsaITtm2",
+							"index": "a0",
+							"type": "entry",
+							"entry": "28kKPK8g4XHE4BgkOKhCqDj99pO"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "28l2ZzBujjeOpNWGhttT2LQLixp",
+			"index": "a1",
+			"type": "Content",
+			"text": [
+				{
+					"type": "paragraph",
+					"content": [
+						{
+							"type": "text",
+							"text": "Heirloom echo park mlkshk tote bag selvage hot chicken authentic "
+						},
+						{
+							"type": "text",
+							"text": "tumeric truffaut",
+							"marks": [
+								{
+									"type": "bold"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " hexagon try-hard chambray."
+						},
+						{
+							"type": "text",
+							"text": "pitchfork pour-over",
+							"marks": [
+								{
+									"type": "bold"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag."
+						}
+					]
+				},
+				{
+					"id": "28l2azqDj78g1ohYlSU1txarzgV",
+					"type": "ImageBlock",
+					"image": [
+						{
+							"id": "28l2bMhabzRN76j8pWlxYfRACQQ",
+							"index": "a0",
+							"type": "entry",
+							"entry": "28l21KYjX8nROaQBSovnSXd3Jk1"
+						}
+					]
+				},
+				{
+					"type": "paragraph",
+					"content": [
+						{
+							"type": "text",
+							"text": "Heirloom echo park mlkshk tote bag selvage hot chicken authentic "
+						},
+						{
+							"type": "text",
+							"text": "tumeric truffaut",
+							"marks": [
+								{
+									"type": "bold"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " hexagon try-hard chambray."
+						},
+						{
+							"type": "text",
+							"text": "pitchfork pour-over",
+							"marks": [
+								{
+									"type": "bold"
+								}
+							]
+						},
+						{
+							"type": "text",
+							"text": " freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag."
+						}
+					]
+				},
+				{
+					"id": "28l5xzs3nRmiTJQXVvZYLr2gPVQ",
+					"type": "ButtonBlock",
+					"label": "Visit our blog",
+					"link": [
+						{
+							"id": "28l8DDJEF7zEJnBLhqNqFcDZyJs",
+							"index": "a0",
+							"type": "entry",
+							"entry": "28kKPK8g4XHE4BgkOKhCqDj99pO"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "28lFQKtYXPffgk3CMA6zh1GSU1G",
+			"index": "a2",
+			"type": "Testimonials",
+			"title": "Testimonials",
+			"testimonials": [
+				{
+					"id": "28lGG4S3uXEoHKij9joZ5lLszO0",
+					"index": "a0",
+					"type": "Testimonial",
+					"quote": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90s microdosing. "
+								},
+								{
+									"type": "text",
+									"text": "Tacos pinterest fanny pack",
+									"marks": [
+										{
+											"type": "italic"
+										}
+									]
+								},
+								{
+									"type": "text",
+									"text": " venmo, post-ironic heirloom try-hard pabst authentic iceland."
+								}
+							]
+						}
+					],
+					"name": "Holden Caulfield",
+					"role": "UI DEVELOPER",
+					"avatar": [
+						{
+							"id": "28lGaVn6GPpf9RfvfZb5lRl5RQQ",
+							"index": "a0",
+							"type": "entry",
+							"entry": "28lGab7pDDQubsaLBtZexAuEjzW"
+						}
+					]
+				},
+				{
+					"id": "28lJyIj9aPGjmL686nP4oplBUJO",
+					"index": "a1",
+					"type": "Testimonial",
+					"quote": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Nunc sed turpis nec lorem pellentesque dapibus eget at ligula. Morbi convallis eros egestas est ullamcorper gravida. "
+								},
+								{
+									"type": "text",
+									"text": "Donec lacinia",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								},
+								{
+									"type": "text",
+									"text": " nibh nec tristique lacinia. Suspendisse id ligula nec magna tincidunt venenatis."
+								}
+							]
+						}
+					],
+					"name": "Alper Kamu",
+					"role": "DESIGNER",
+					"avatar": [
+						{
+							"id": "28lMiDVAD7QPTqv6bNlBunjtt77",
+							"index": "a0",
+							"type": "entry",
+							"entry": "28lJzSLhvgnFXQDYTZTUwa37Zmg"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "28lFQWwlmOwHpGoHAwsGwBmnTsH",
+			"index": "a3",
+			"type": "CTA",
+			"title": "Slow-carb next level shoindxgoitch ethical authentic, scenester sriracha forage.",
+			"label": "Blog",
+			"link": [
+				{
+					"id": "28lONGVC5NYlEtuKahSck4YXKuV",
+					"index": "a0",
+					"type": "entry",
+					"entry": "28kKPK8g4XHE4BgkOKhCqDj99pO"
+				}
+			]
+		}
+	]
 }
