@@ -1,8 +1,8 @@
-import {createCloudBackend} from '@alinea/cloud'
-import {IcRoundInsertDriveFile} from '@alinea/ui/icons/IcRoundInsertDriveFile'
-import {IcRoundPermMedia} from '@alinea/ui/icons/IcRoundPermMedia'
+import { createCloudBackend } from '@alinea/cloud'
+import { IcRoundInsertDriveFile } from '@alinea/ui/icons/IcRoundInsertDriveFile'
+import { IcRoundPermMedia } from '@alinea/ui/icons/IcRoundPermMedia'
 import alinea from 'alinea'
-import {SectionsSchema} from './src/sections/Sections.schema'
+import { SectionsSchema } from './src/sections/Sections.schema'
 
 export const config = alinea.createConfig({
 	workspaces: {
@@ -50,8 +50,8 @@ export const config = alinea.createConfig({
 	},
 	backend: createCloudBackend(),
 	dashboard: {
-		dashboardUrl: 'https://alinea-blog.vercel.app/admin.html',
-		handlerUrl: 'https://alinea-blog.vercel.app/api/cms',
+		dashboardUrl: '/admin.html',
+		handlerUrl: '/api/cms',
 		staticFile: './public/admin.html'
 	}
 })
