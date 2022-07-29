@@ -48,5 +48,10 @@ export const config = alinea.createConfig({
 			}
 		})
 	},
-	backend: createCloudBackend()
+	backend: createCloudBackend(),
+	dashboard: {
+		dashboardUrl: 'https://alinea-blog.vercel.app/admin.html',
+		handlerUrl: 'https://alinea-blog.vercel.app/api/cms',
+		staticFile: './public/admin.html'
+	}
 })
