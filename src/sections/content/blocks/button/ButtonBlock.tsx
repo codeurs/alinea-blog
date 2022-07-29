@@ -1,8 +1,8 @@
 import {Button} from '../../../../ui/Button'
-import {ButtonBlockData} from './ButtonBlock.query'
+import {ButtonBlockSchema} from './ButtonBlock.schema'
 
-export const ButtonBlock: React.FC<ButtonBlockData> = ({label, link}) => {
-	if (!link?.href) return null
+export const ButtonBlock: React.FC<ButtonBlockSchema> = ({label, link}) => {
+	if (!link?.url) return null
 
 	return (
 		<div className="mt-4 cursor-pointer">

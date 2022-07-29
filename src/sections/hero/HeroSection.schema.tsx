@@ -4,7 +4,7 @@ import {link, list, richText, schema, select, text} from 'alinea'
 export const HeroSectionSchema = type('Hero', {
 	title: text('Title'),
 	intro: richText('Intro'),
-	image: link('Image', {type: 'image', max: 1}),
+	image: link.image('Image', {type: 'image', max: 1}),
 	buttons: list('CTA buttons', {
 		schema: schema({
 			CTA: type('Button', {

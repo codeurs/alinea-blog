@@ -1,40 +1,32 @@
 import {IcRoundInsertDriveFile} from '@alinea/ui/icons/IcRoundInsertDriveFile'
 import {IcRoundPermMedia} from '@alinea/ui/icons/IcRoundPermMedia'
-import {
-	createConfig,
-	MediaSchema,
-	path,
-	root,
-	schema,
-	select,
-	text,
-	type,
-	workspace
-} from 'alinea'
+import {alinea} from 'alinea'
 import {SectionsSchema} from './src/sections/Sections.schema'
 
-export const config = createConfig({
+export const config = alinea.createConfig({
 	workspaces: {
-		main: workspace('Alinea blog', {
+		main: alinea.workspace('Example', {
 			source: './content',
 			mediaDir: './public',
-			schema: schema({
-				...MediaSchema,
-				Page: type('Page', {
-					title: text('Title'),
-					path: path('Path'),
+			schema: alinea.schema({
+				...alinea.MediaSchema,
+				Page: alinea.type('Page', {
+					title: alinea.text('Title'),
+					path: alinea.path('Path'),
 					sections: SectionsSchema
 				}),
-				Blog: type('Blog', {
-					title: text('Title'),
-					path: path('Path'),
-					sections: SectionsSchema
-				}).configure({isContainer: true, contains: ['Article']}),
-				Article: type('Article', {
-					title: text('Title'),
-					path: path('Path'),
-					date: text('Date'),
-					tag: select('Tag', {
+				Blog: alinea
+					.type('Blog', {
+						title: alinea.text('Title'),
+						path: alinea.path('Path'),
+						sections: SectionsSchema
+					})
+					.configure({isContainer: true, contains: ['Article']}),
+				Article: alinea.type('Article', {
+					title: alinea.text('Title'),
+					path: alinea.path('Path'),
+					date: alinea.text('Date'),
+					tag: alinea.select('Tag', {
 						World: 'World',
 						Analysis: 'Analysis',
 						Lifestyle: 'Lifestyle',
@@ -44,11 +36,11 @@ export const config = createConfig({
 				})
 			}),
 			roots: {
-				data: root('Website', {
+				data: alinea.root('Example project', {
 					icon: IcRoundInsertDriveFile,
 					contains: ['Page']
 				}),
-				media: root('Media', {
+				media: alinea.root('Media', {
 					icon: IcRoundPermMedia,
 					contains: ['MediaLibrary']
 				})

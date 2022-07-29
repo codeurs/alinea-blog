@@ -1,7 +1,11 @@
 import {Button} from '../../ui/Button'
-import {CtaSectionData} from './CtaSection.query'
+import {CtaSectionSchema} from './CtaSection.schema'
 
-export const CtaSection: React.FC<CtaSectionData> = ({title, label, link}) => {
+export const CtaSection: React.FC<CtaSectionSchema> = ({
+	title,
+	label,
+	link
+}) => {
 	return (
 		<section className="text-gray-600 body-font">
 			<div className="container px-5 mx-auto my-24">

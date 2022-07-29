@@ -1,6 +1,4 @@
-import {Pages} from '../../server/pages'
-import {buttonBlockQuery} from './blocks/button/ButtonBlock.query'
-import {imageBlockQuery} from './blocks/image/ImageBlock.query'
+import {Pages} from '@alinea/content/main'
 import {ContentSectionSchema} from './ContentSection.schema'
 
 export async function contentSectionQuery(
@@ -19,14 +17,7 @@ export async function blockQuery(
 	pages: Pages,
 	block: ContentSectionSchema['text'][number]
 ) {
-	switch (block.type) {
-		case 'ImageBlock':
-			return imageBlockQuery(pages, block as any)
-		case 'ButtonBlock':
-			return buttonBlockQuery(pages, block as any)
-		default:
-			return block
-	}
+	return block
 }
 
 export type ContentData = Awaited<ReturnType<typeof contentSectionQuery>>

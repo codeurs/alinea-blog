@@ -1,5 +1,4 @@
-import {Pages} from '../../server/pages'
-import {Article} from '../../server/schema'
+import {Article, Pages} from '@alinea/content/main'
 import {HeroSectionSchema} from '../hero/HeroSection.schema'
 import {RelatedSectionSchema} from './RelatedSection.schema'
 
@@ -7,7 +6,7 @@ export async function relatedSectionQuery(
 	pages: Pages,
 	block: RelatedSectionSchema
 ) {
-	const posts = await pages.all().whereType(Article)
+	const posts: Article[] = await pages.whereType('Article')
 	posts.sort((a, b) => a.index.localeCompare(b.index))
 
 	return {

@@ -3,16 +3,15 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
-		"dev": "next dev",
-		"build": "alinea generate && next build",
+		"dev": "alinea serve -- next dev",
+		"build": "alinea generate -- next build",
 		"start": "next start",
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"@alinea/auth.passwordless": "^0.0.11",
-		"@alinea/backend": "^0.0.11",
+		"@alinea/content": "link:./.alinea",
 		"@types/nodemailer": "^6.4.4",
-		"alinea": "^0.0.11",
+		"alinea": "^0.1.15",
 		"autoprefixer": "^10.4.7",
 		"blurhash": "^1.1.5",
 		"ioredis": "^5.0.4",

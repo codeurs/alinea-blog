@@ -1,11 +1,8 @@
 import Image from 'next/image'
 import {RichText} from '../../ui/RichText'
-import {
-	TestimonialData,
-	TestimonialsSectionData
-} from './TestimonialsSection.query'
+import {TestimonialsSectionSchema} from './TestimonialsSection.schema'
 
-export const TestimonialsSection: React.FC<TestimonialsSectionData> = ({
+export const TestimonialsSection: React.FC<TestimonialsSectionSchema> = ({
 	title,
 	testimonials
 }) => {
@@ -25,7 +22,9 @@ export const TestimonialsSection: React.FC<TestimonialsSectionData> = ({
 	)
 }
 
-const Testimonial: React.FC<TestimonialData> = ({
+type TestimonialsSection = TestimonialsSectionSchema['testimonials'][number]
+
+const Testimonial: React.FC<TestimonialsSection> = ({
 	quote,
 	avatar,
 	name,
@@ -48,7 +47,11 @@ const Testimonial: React.FC<TestimonialData> = ({
 				<a className="inline-flex items-center">
 					{avatar ? (
 						<div className="relative flex-shrink-0 w-12 h-12 rounded-full">
-							<Image {...avatar} objectFit="cover" objectPosition="center" />
+							<Image
+								src={avatar.src}
+								objectFit="cover"
+								objectPosition="center"
+							/>
 						</div>
 					) : (
 						<img

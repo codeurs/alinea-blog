@@ -5,7 +5,7 @@ export const TestimonialSchema = type('Testimonial', {
 	quote: richText('Intro'),
 	name: text('Name', {width: 0.33}),
 	role: text('Role', {width: 0.33}),
-	avatar: link('Image', {type: 'image', max: 1, width: 0.33})
+	avatar: link.image('Image', {type: 'image', max: 1, width: 0.33})
 })
 
 export const TestimonialsSectionSchema = type('Testimonials', {

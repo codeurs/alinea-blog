@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import {Button} from '../../ui/Button'
 import {RichText} from '../../ui/RichText'
-import {HeroSectionData} from './HeroSection.query'
+import {HeroSectionSchema} from './HeroSection.schema'
 
-export const HeroSection: React.FC<HeroSectionData> = ({
+export const HeroSection: React.FC<HeroSectionSchema> = ({
 	title,
 	intro,
 	image,
@@ -33,7 +33,9 @@ export const HeroSection: React.FC<HeroSectionData> = ({
 					</div>
 				</div>
 				<div className="w-5/6 lg:max-w-lg lg:w-full md:w-1/2">
-					{image && <Image {...image} />}
+					{image && (
+						<Image src={image.src} width={image.width} height={image.height} />
+					)}
 				</div>
 			</div>
 		</section>
