@@ -1,3 +1,4 @@
+import {createCloudBackend} from '@alinea/cloud'
 import {IcRoundInsertDriveFile} from '@alinea/ui/icons/IcRoundInsertDriveFile'
 import {IcRoundPermMedia} from '@alinea/ui/icons/IcRoundPermMedia'
 import alinea from 'alinea'
@@ -46,5 +47,6 @@ export const config = alinea.createConfig({
 				})
 			}
 		})
-	}
+	},
+	backend: createCloudBackend()
 })

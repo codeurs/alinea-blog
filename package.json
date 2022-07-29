@@ -9,6 +9,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@alinea/cloud": "^0.1.15",
 		"@alinea/content": "link:./.alinea",
 		"@types/nodemailer": "^6.4.4",
 		"alinea": "^0.1.15",

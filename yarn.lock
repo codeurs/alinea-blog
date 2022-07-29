@@ -38,6 +38,19 @@
     "@alinea/core" "0.1.15"
     "@alinea/iso" "^0.1.18"
 
+"@alinea/cloud@^0.1.15":
+  version "0.1.15"
+  resolved "https://registry.yarnpkg.com/@alinea/cloud/-/cloud-0.1.15.tgz#e0df4d5d8d879cdf88a1f9c8d4e8095da49347a6"
+  integrity sha512-AEZrhX98HFkRebKmOLuhU/Nj1qp25wfw5n/SZPNAAosHj0xUthmGo7Vv0u9rPGwmr66nFIkwvmmSXmaanCXIgA==
+  dependencies:
+    "@alinea/backend" "0.1.15"
+    "@alinea/client" "0.1.15"
+    "@alinea/core" "0.1.15"
+    "@alinea/dashboard" "0.1.15"
+    "@alinea/iso" "^0.1.18"
+    "@alinea/shared" "0.1.15"
+    "@alinea/ui" "0.1.15"
+
 "@alinea/content@link:./.alinea":
   version "0.0.0"
   uid ""
