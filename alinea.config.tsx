@@ -1,6 +1,6 @@
 import {IcRoundInsertDriveFile} from '@alinea/ui/icons/IcRoundInsertDriveFile'
 import {IcRoundPermMedia} from '@alinea/ui/icons/IcRoundPermMedia'
-import {alinea} from 'alinea'
+import alinea, {BrowserPreview} from 'alinea'
 import {SectionsSchema} from './src/sections/Sections.schema'
 
 export const config = alinea.createConfig({
@@ -44,6 +44,17 @@ export const config = alinea.createConfig({
 					icon: IcRoundPermMedia,
 					contains: ['MediaLibrary']
 				})
+			},
+			preview({entry, previewToken}) {
+				const noPreviews = new Set(['Docs', 'MediaLibrary'])
+				if (noPreviews.has(entry.type)) return null
+				const location = process.env.APP_URL
+				return (
+					<BrowserPreview
+						url={`${location}/api/preview?${previewToken}`}
+						prettyUrl={entry.url}
+					/>
+				)
 			}
 		})
 	}
