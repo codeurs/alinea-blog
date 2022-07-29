@@ -12,7 +12,7 @@
 		"@alinea/cloud": "^0.1.15",
 		"@alinea/content": "link:./.alinea",
 		"@types/nodemailer": "^6.4.4",
-		"alinea": "^0.1.15",
+		"alinea": "^0.1.16",
 		"autoprefixer": "^10.4.7",
 		"blurhash": "^1.1.5",
 		"ioredis": "^5.0.4",
