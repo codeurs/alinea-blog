@@ -37,9 +37,3 @@ After your project is setup, navigate to `www.your-domain.vercel.app/admin.html`
 - Add the API key as an environment variable in Vercel
 - Create a new deployment
 - You are ready to use the Alinea CMS in production
-
-#### Optional
-
-The following environment variable is optional and not required if you are hosting on Vercel:
-
-- The `APP_URL` should contain the url of your website (no trailing slash), which is used to create a valid link in the login email. For example `https://alinea-blog.vercel.app`.
