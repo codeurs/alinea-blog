@@ -1,7 +1,7 @@
 import {createCloudBackend} from '@alinea/cloud'
 import {IcRoundInsertDriveFile} from '@alinea/ui/icons/IcRoundInsertDriveFile'
 import {IcRoundPermMedia} from '@alinea/ui/icons/IcRoundPermMedia'
-import alinea from 'alinea'
+import alinea, {BrowserPreview} from 'alinea'
 import {SectionsSchema} from './src/sections/Sections.schema'
 
 export const config = alinea.createConfig({
@@ -45,6 +45,11 @@ export const config = alinea.createConfig({
 					icon: IcRoundPermMedia,
 					contains: ['MediaLibrary']
 				})
+			},
+			preview({previewToken}) {
+				const base =
+					location.host === 'localhost:4500' ? 'http://localhost:3000' : ''
+				return <BrowserPreview url={`${base}/api/preview?${previewToken}`} />
 			}
 		})
 	},
