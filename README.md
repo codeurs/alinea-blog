@@ -17,12 +17,8 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to see the website.
-
-```bash
-yarn alinea serve
-```
-
 Open [http://localhost:4500](http://localhost:4500) to see the Alinea CMS and make changes to the content of your site.
+
 
 ## Deploy your own
 
