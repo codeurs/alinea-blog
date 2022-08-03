@@ -9,10 +9,10 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"@alinea/cloud": "^0.1.16",
+		"@alinea/cloud": "^0.1.17",
 		"@alinea/content": "link:./.alinea",
 		"@types/nodemailer": "^6.4.4",
-		"alinea": "^0.1.16",
+		"alinea": "^0.1.17",
 		"autoprefixer": "^10.4.7",
 		"next": "12.1.6",
 		"react": "18.1.0",
