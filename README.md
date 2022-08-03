@@ -16,8 +16,8 @@ Zero configuration is required if you want to get started with this project:
 yarn dev
 ```
 
-- Open [http://localhost:3000](http://localhost:3000) to see the website.
-- Open [http://localhost:4500](http://localhost:4500) to see the Alinea CMS and make changes to the content of your site.
+- Open [http://localhost:3000](http://localhost:3000) to see your blog.
+- Open [http://localhost:4500](http://localhost:4500) to access the Alinea CMS and update your content.
 
 
 ## Deploy your own
