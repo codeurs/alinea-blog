@@ -1,10 +1,9 @@
 import {Schema, type} from '@alinea/core'
-import {link} from '@alinea/input.link'
-import {text} from 'alinea'
+import alinea from 'alinea'
 
 export const ButtonBlockSchema = type('Button', {
-	label: text('Label', {inline: true, width: 0.4}),
-	link: link('Link', {
+	label: alinea.text('Label', {inline: true, width: 0.4}),
+	link: alinea.link('Link', {
 		type: ['entry', 'external'],
 		max: 1,
 		inline: true,

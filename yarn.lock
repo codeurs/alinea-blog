@@ -2,263 +2,309 @@
 # yarn lockfile v1
 
 
-"@alinea/backend@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/backend/-/backend-0.1.18.tgz#96709cb6f141268cecad13244e826a6265b6d8b6"
-  integrity sha512-C/gkH2r+QkcW5bry/7o/10RKHSEB8EqsG2CvCjYvo+av4QsYyZ+d6yPNdrMSySI9Nv8V37NAQtLNC4hGFZVlHg==
+"@alinea/backend.indexeddb@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/backend.indexeddb/-/backend.indexeddb-0.2.0.tgz#802f6ac0bbb8658b1e8ebd8f714dc9874fe2d9ae"
+  integrity sha512-U7BT8xhxy5ffNUTO0gIsGYh8p2JyKUvui82BPY5eii/EawohOQUTxyHrSECdGUs0Y1M32bl+Wn4BKcd4MuAekA==
   dependencies:
-    "@alinea/core" "0.1.18"
-    "@alinea/iso" "^0.1.18"
-    "@alinea/store" "0.1.18"
+    "@alinea/core" "0.2.0"
     yjs "^13.5.39"
 
-"@alinea/cli@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/cli/-/cli-0.1.18.tgz#dc488461bab50360d67e6eb7223b9410adc82837"
-  integrity sha512-0393a/Dq6EsdlD1u6M5DajUU+Q/vUHLCgI/bkv8Ao9Vd452TkqheWCgZF2djV7qk6y21o3uh09Ek9KEAJvjj1A==
+"@alinea/backend@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/backend/-/backend-0.2.0.tgz#0ee7c100f766ad08c076fffd97b8790b89b3cf02"
+  integrity sha512-fYbagSKG+7/FnRpbjEqKl1L7t+7VrU0AAZ6qq6lkkHqdxNS6SfpMzUuDqOvF0K8Kq3zozkdK9Q0TKo24N5KFlQ==
   dependencies:
-    "@alinea/backend" "0.1.18"
-    "@alinea/client" "0.1.18"
-    "@alinea/core" "0.1.18"
-    "@alinea/iso" "^0.1.18"
-    "@alinea/sqlite-wasm" "^0.1.7"
-    "@alinea/store" "0.1.18"
+    "@alinea/core" "0.2.0"
+    "@alinea/iso" "^0.1.21"
+    "@alinea/sqlite-wasm" "^0.1.10"
+    "@alinea/store" "0.2.0"
+    yjs "^13.5.39"
+
+"@alinea/cli@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/cli/-/cli-0.2.0.tgz#4853eb6401a2532b8465f07d201521aa16a7f7d6"
+  integrity sha512-W18o/a/G0G+ewL6fnqkiXns76b87tZRe9EAtln27dJkMFtfcOtUfUTT0T0i/cD/eM47vEVd8Fk+0ouZypd9LqQ==
+  dependencies:
+    "@alinea/backend" "0.2.0"
+    "@alinea/client" "0.2.0"
+    "@alinea/core" "0.2.0"
+    "@alinea/iso" "^0.1.21"
+    "@alinea/sqlite-wasm" "^0.1.10"
+    "@alinea/store" "0.2.0"
     "@esbx/eval" "^0.0.19"
     chokidar "^3.5.3"
     esbuild "^0.14.51"
     mime-db "^1.51.0"
     yjs "^13.5.39"
 
-"@alinea/client@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/client/-/client-0.1.18.tgz#0ddab47d1e580cb0ee551ee0df303ee52a6cbd43"
-  integrity sha512-ubEIqB6/jzwXDp5/Na6p3H2PFg5H0Ib9x/qQO/Ux316rW0JXfxlb7jeD1nZI9H3f+IhhGBvYkIkfkgdPd7kmUA==
+"@alinea/client@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/client/-/client-0.2.0.tgz#80eab452861acf8eac7d6d9734afc7c18f5f2283"
+  integrity sha512-Zjq0Zzx420vNY/UYu25wp9kEEpZXjYrG3KWzcPRHw0OmG8WGhuGNGl93tWkl3hnTceM/mHZjHx2vv2/p1HdBGg==
   dependencies:
-    "@alinea/core" "0.1.18"
-    "@alinea/iso" "^0.1.18"
+    "@alinea/core" "0.2.0"
+    "@alinea/iso" "^0.1.21"
 
-"@alinea/cloud@0.1.18", "@alinea/cloud@^0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/cloud/-/cloud-0.1.18.tgz#5a415afb96019905c28e612da89a8f8e149f0783"
-  integrity sha512-AwXZWa1rvIgrTXn8hpOc698QWyo88BU7eg2/W7YfSU2D2O1HU6cWWKM1y73V1AuuUhHndddonGsT8IJquZK71A==
+"@alinea/cloud@0.2.0", "@alinea/cloud@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/cloud/-/cloud-0.2.0.tgz#075eb42972b89a33eefa62129c5956ebf1bac65e"
+  integrity sha512-tk9aqwzZ9f4w9m+AtFeI99mkThDyd/JMEYo9LbO+JGL3b4iGi/jtMhuayxJyA+MhU04iZx4oe+Zb6/OJvE/vyA==
   dependencies:
-    "@alinea/backend" "0.1.18"
-    "@alinea/client" "0.1.18"
-    "@alinea/core" "0.1.18"
-    "@alinea/dashboard" "0.1.18"
-    "@alinea/iso" "^0.1.18"
-    "@alinea/shared" "0.1.18"
-    "@alinea/ui" "0.1.18"
+    "@alinea/backend" "0.2.0"
+    "@alinea/client" "0.2.0"
+    "@alinea/core" "0.2.0"
+    "@alinea/dashboard" "0.2.0"
+    "@alinea/iso" "^0.1.21"
+    "@alinea/shared" "0.2.0"
+    "@alinea/ui" "0.2.0"
 
 "@alinea/content@link:./.alinea":
   version "0.0.0"
   uid ""
 
-"@alinea/core@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/core/-/core-0.1.18.tgz#56be181548a22422f53812f865bcd0b398ebd712"
-  integrity sha512-EYG70vcPC/o9LlNPUAUzODpCsL6V8UX4iDYakCLZj20cdmzQ+bTQSdWqsHw9+z9iDC30Yi1rl7rqnYUhudbZ4A==
+"@alinea/core@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/core/-/core-0.2.0.tgz#816f36268d6cbe51eb3a30a8ea80e53ea6d0528f"
+  integrity sha512-9N04bTxs7cB5ahztDzsD7z1ZNXfdJETH0Tbpe8ErHKELDynhA0kS/Hw9Fyzm2aaiPenJsEqODxVSVD5f+LSsfA==
   dependencies:
-    "@alinea/iso" "^0.1.18"
-    "@alinea/store" "0.1.18"
+    "@alinea/iso" "^0.1.21"
+    "@alinea/store" "0.2.0"
     yjs "^13.5.39"
 
-"@alinea/css@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/css/-/css-0.1.18.tgz#74b9eaf9e5650795033a7f43bbc7636da61c236a"
-  integrity sha512-hvfLzHgu3Yc7TnIf5Y+3dHeGygLGfFCsFwzLIwG/Fy88GxFI+gAldNoPYCuJItDkVLu3Bv4bvC+G9RZwk/7Ixg==
+"@alinea/css@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/css/-/css-0.2.0.tgz#e6a2ea25ac51e6758b74fcae920a0f7b99803d02"
+  integrity sha512-8RToGasEmrOAXIyqLqbUd+uAY1Y9Mh92XTN2zeuOT6DxfsqXc7WFFdbm8TzFMgNFoI/ZagrD8BFiu1NK+kRJlA==
 
-"@alinea/dashboard@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/dashboard/-/dashboard-0.1.18.tgz#650f6b92605a953890400b9951d2d51ada08fe8c"
-  integrity sha512-sA2Ldju0FoFceNEe8h907wDFcSszb2W5nZesfZpdd+f6HwEIKW5c4kUnpcVbWaPLE0uDR00lLZ+zBcEDtNV3zw==
+"@alinea/dashboard@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/dashboard/-/dashboard-0.2.0.tgz#c33da05e6068c78822ec642179f578e157675535"
+  integrity sha512-ZsluBix0A3ZnexLxgyasOfg///4DHwg2rcrX2fYBXcGpNVEzbEQ2ScSwWg9DbNnMzlcBN5h74nRrE6DEf69DBw==
   dependencies:
-    "@alinea/client" "0.1.18"
-    "@alinea/core" "0.1.18"
-    "@alinea/css" "0.1.18"
-    "@alinea/editor" "0.1.18"
-    "@alinea/input.check" "0.1.18"
-    "@alinea/input.hidden" "0.1.18"
-    "@alinea/input.link" "0.1.18"
-    "@alinea/input.select" "0.1.18"
-    "@alinea/input.text" "0.1.18"
-    "@alinea/preview" "0.1.18"
-    "@alinea/shared" "0.1.18"
-    "@alinea/store" "0.1.18"
-    "@alinea/ui" "0.1.18"
+    "@alinea/backend" "0.2.0"
+    "@alinea/backend.indexeddb" "0.2.0"
+    "@alinea/client" "0.2.0"
+    "@alinea/core" "0.2.0"
+    "@alinea/css" "0.2.0"
+    "@alinea/editor" "0.2.0"
+    "@alinea/input.hidden" "0.2.0"
+    "@alinea/input.link" "0.2.0"
+    "@alinea/input.path" "0.2.0"
+    "@alinea/input.select" "0.2.0"
+    "@alinea/input.text" "0.2.0"
+    "@alinea/picker.entry" "0.2.0"
+    "@alinea/preview" "0.2.0"
+    "@alinea/shared" "0.2.0"
+    "@alinea/store" "0.2.0"
+    "@alinea/ui" "0.2.0"
     react-router "^6.3.0"
     react-router-dom "^6.3.0"
     yjs "^13.5.39"
 
-"@alinea/editor@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/editor/-/editor-0.1.18.tgz#5f59d9c0e745d994c4e85328c4281087976d9fb7"
-  integrity sha512-fVkga7Zt+Om/5JpKqBEExNHxphyhcMMFj1ZXPurcnSNeRBZCjMOZjbSUTbfpSC7FxVWjdtlI88MnfkjMp/Zegg==
+"@alinea/editor@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/editor/-/editor-0.2.0.tgz#a8b5441c17dae95c1cb5a958122c99e21cee289e"
+  integrity sha512-pTbIdcF5aoCQt7Ll9LMybuFYUUAmIwAtxsB3z1IZ5Z8BqoghPj9blxYzB8d29QDjx6J0zk7VtxsmEs97vfAc+w==
   dependencies:
-    "@alinea/core" "0.1.18"
-    "@alinea/ui" "0.1.18"
+    "@alinea/core" "0.2.0"
+    "@alinea/shared" "0.2.0"
+    "@alinea/ui" "0.2.0"
     yjs "^13.5.39"
 
-"@alinea/input.check@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/input.check/-/input.check-0.1.18.tgz#f7340bfe7f7d1beee25e0f1a94b7bdce60e3a9be"
-  integrity sha512-LBwG0dMM4OFiYWA667olD9cao2GhHrKgfeNRQtgwEE5IZwQIB5OzDqF/vZh/AKxLms119ZSUNoO5tpa1TXDOPg==
+"@alinea/input.check@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/input.check/-/input.check-0.2.0.tgz#f7c3d3d65ab4e5e97db878ee52efe4d57daf7b06"
+  integrity sha512-aGhUj1UNJHskSAZw/j8D9hVlamhCaaS7Dm50X8i5Mcan1kS0OO/0xgur8vIx2dMJxhdApccGJEmSyVGmThRwKQ==
   dependencies:
-    "@alinea/core" "0.1.18"
-    "@alinea/editor" "0.1.18"
-    "@alinea/ui" "0.1.18"
+    "@alinea/core" "0.2.0"
+    "@alinea/editor" "0.2.0"
+    "@alinea/ui" "0.2.0"
 
-"@alinea/input.code@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/input.code/-/input.code-0.1.18.tgz#b62bb6077af80137ed57aef1b56b514c3fe7bbe5"
-  integrity sha512-E7uNFGR0vY/0X8k0cnvsmwqOTz97ODD36UIhKx9GHqP2B9V55MblzPrEoLd6xMXow7jZxJ02IBMrfuT+WhkeSw==
+"@alinea/input.code@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/input.code/-/input.code-0.2.0.tgz#a13b968eb9a8d67c234481844aeee188be346355"
+  integrity sha512-iNcB+aj77ioP/6myky4sC/4fm6k0P4ZZbZ60NbctC0Vo2Pok6A/hD9+Q+LnVKeZNF9z8yFnxDxm7hPkpvH1CWA==
   dependencies:
-    "@alinea/core" "0.1.18"
-    "@alinea/editor" "0.1.18"
-    "@alinea/ui" "0.1.18"
+    "@alinea/core" "0.2.0"
+    "@alinea/editor" "0.2.0"
+    "@alinea/ui" "0.2.0"
 
-"@alinea/input.date@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/input.date/-/input.date-0.1.18.tgz#2c56fb808a48cf7a55f289b65bbff45513dedd10"
-  integrity sha512-8/SwsNY+1xayE93B1u9FVqf6sgfxn3srRki0ulZ+bce4m44j5kTEuIgnhVdcydSRpWBgQIURnAXSypPbIu6IQg==
+"@alinea/input.date@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/input.date/-/input.date-0.2.0.tgz#d46d0bf67c1fbb2241d14985e780827d8bf1f5b4"
+  integrity sha512-XYLTmoyAX0ny0sQROmEoZ2inPa9c4ndczknPmckDn8nRia+TaslKapaLwigYHGYA+VhQ4KxXW7oFG5byYtyv1w==
   dependencies:
-    "@alinea/core" "0.1.18"
-    "@alinea/editor" "0.1.18"
-    "@alinea/ui" "0.1.18"
+    "@alinea/core" "0.2.0"
+    "@alinea/editor" "0.2.0"
+    "@alinea/ui" "0.2.0"
 
-"@alinea/input.hidden@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/input.hidden/-/input.hidden-0.1.18.tgz#561c36c4b71fc12450aa3eaaaabb0eaaad11b385"
-  integrity sha512-7WH01mKvJG99GJIMqcFvJkvKEGPn6AKkQAZmPUI1uaiYTdS1NiqXDIV6EKluPIgOqGmNnyYOL72kAQVSrt+3Gg==
+"@alinea/input.hidden@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/input.hidden/-/input.hidden-0.2.0.tgz#2db28e8ee553a15711d9d5fbe7c44741d1ce005f"
+  integrity sha512-yZvloJocAzBlDQIg4vhoYROsEf4VJjdjhc3UA4t3940HQLvvhhRRRkFwhb5GexSYtCnxrYWnbZQafhhBNlMiBw==
   dependencies:
-    "@alinea/core" "0.1.18"
+    "@alinea/core" "0.2.0"
 
-"@alinea/input.link@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/input.link/-/input.link-0.1.18.tgz#4b6e10fc724cb99718aac72283ce6cc276d8f51e"
-  integrity sha512-+jDwRgNtIskC0a1F1AHxRRelnL2/u1aCU4vMEFofpOoFVbpPCUDo+pHvSGEkwS3YH930zr9mRNbdGZsgNN1rZQ==
+"@alinea/input.json@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/input.json/-/input.json-0.2.0.tgz#adecf2ef540bac9057aee8b98b387d02643faa2d"
+  integrity sha512-L3q+TuHdXUIgRDYGptq7c2NRK3Z8e5UbxElMG9JVm2swAd+Vjz/vRGu+BZopWzDpgE7Bw9azzaDBZXJ8vI/cFw==
   dependencies:
-    "@alinea/core" "0.1.18"
-    "@alinea/dashboard" "0.1.18"
-    "@alinea/editor" "0.1.18"
-    "@alinea/shared" "0.1.18"
-    "@alinea/store" "0.1.18"
-    "@alinea/ui" "0.1.18"
+    "@alinea/core" "0.2.0"
+    "@alinea/editor" "0.2.0"
+    "@alinea/ui" "0.2.0"
 
-"@alinea/input.list@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/input.list/-/input.list-0.1.18.tgz#8ccbf072420da53b9b30e81339ce1f8f4a176457"
-  integrity sha512-83CqA44I+pKZR0iHVIq3F6saVnI3xN8ZQuds6Ill6aBYXJx5a8uIbn3ahbjXvi5VFX+lkEtCCXSye0mQ2Z+JPQ==
+"@alinea/input.link@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/input.link/-/input.link-0.2.0.tgz#0ddbafcb44088363f1a325a5522899449d09efa5"
+  integrity sha512-DTWHnLKJXK5HiXBQ6qaeJimjhhU26z5AA5fKMCCIAo9KpNAulKEa/vizbyLeVmYL/W+AAEH6/UsHNtYtlSEdDA==
   dependencies:
-    "@alinea/core" "0.1.18"
-    "@alinea/editor" "0.1.18"
-    "@alinea/shared" "0.1.18"
-    "@alinea/ui" "0.1.18"
+    "@alinea/core" "0.2.0"
+    "@alinea/editor" "0.2.0"
+    "@alinea/picker.entry" "0.2.0"
+    "@alinea/picker.url" "0.2.0"
+    "@alinea/shared" "0.2.0"
+    "@alinea/store" "0.2.0"
+    "@alinea/ui" "0.2.0"
 
-"@alinea/input.number@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/input.number/-/input.number-0.1.18.tgz#00ba5ae34890268b914db47da31ac005be2fc3bb"
-  integrity sha512-Ybm5l2NgAXHSeZ0K0x5HFlB/avHY5mFtbPOBBP+0p8JIaImqHCq8mw349pSFfj6C0XvNPtNNFizyUcxFVBI0MA==
+"@alinea/input.list@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/input.list/-/input.list-0.2.0.tgz#1c31906f203ea85e8d5dfc66dca1a7ec24244b2a"
+  integrity sha512-AkIZS1C65kv8wQYvsuMo51G1utqtntzATyiS5JFCNWXPuUHSqDEa3mAnNy4PNvO6qLBj8wOGwO+QVR4OB7H/Rw==
   dependencies:
-    "@alinea/core" "0.1.18"
-    "@alinea/editor" "0.1.18"
-    "@alinea/ui" "0.1.18"
+    "@alinea/core" "0.2.0"
+    "@alinea/editor" "0.2.0"
+    "@alinea/shared" "0.2.0"
+    "@alinea/ui" "0.2.0"
 
-"@alinea/input.object@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/input.object/-/input.object-0.1.18.tgz#38df114cfe93e6ea399ccd652d3f2b320c0c169a"
-  integrity sha512-+IXTZCtlcb8u6VA+txf8eis1iQgHFy3PHXYccysigifhBqTdduceQXRZGB1mZ9Hr8cjIMW5Ie7F8oK00TkXucw==
+"@alinea/input.number@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/input.number/-/input.number-0.2.0.tgz#424e20fe196d55118cb0a4da928f6a81d5e881e0"
+  integrity sha512-IagMVMEGb4VmQ/tbLkkUZod3nK/riss67U96gSyQp3tD5bUSieMb+wWpuBBf2a7sApP+sMkIyAA7C/GMTgFELQ==
   dependencies:
-    "@alinea/core" "0.1.18"
-    "@alinea/editor" "0.1.18"
-    "@alinea/ui" "0.1.18"
+    "@alinea/core" "0.2.0"
+    "@alinea/editor" "0.2.0"
+    "@alinea/ui" "0.2.0"
 
-"@alinea/input.path@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/input.path/-/input.path-0.1.18.tgz#eedfe7a5af4a5f132647519b2db1391863d257a9"
-  integrity sha512-uCKsIsBiUXM+5EilNmUJog0iUV5X69PzX6cR+mwYbJ4COFMWNiJnF50pRsdtQDFdCHZWGtRdj2p+ntowxOm4Ng==
+"@alinea/input.object@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/input.object/-/input.object-0.2.0.tgz#8e5215409a6547655bbcf5636a2d85295255e085"
+  integrity sha512-y0pIF+rYr+Csv8rqdhB4oSqg3x9G1/TQzhc6btbcz0pz4h7mkftCAHSmRmoy1KjiR9b2AWt74NLe3eJY5KlGkQ==
   dependencies:
-    "@alinea/core" "0.1.18"
-    "@alinea/editor" "0.1.18"
-    "@alinea/ui" "0.1.18"
+    "@alinea/core" "0.2.0"
+    "@alinea/editor" "0.2.0"
+    "@alinea/ui" "0.2.0"
 
-"@alinea/input.richtext@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/input.richtext/-/input.richtext-0.1.18.tgz#269ce71aeea6213387d7c9bbe61acf9cdf45306f"
-  integrity sha512-58AM8fnG3vaGE1Xwd9QWgPsDTcEuqQvxS38csr87l65HL2S59kTQn40GO9NRXna733bSRiTlQFJU4v+X2OA3Bg==
+"@alinea/input.path@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/input.path/-/input.path-0.2.0.tgz#871432180f02ec27bcd96ced335bdffaa96aa7c5"
+  integrity sha512-EPI7q4YjuG3/E0Mu0iCExVtEXMOnk1hIiMKydhIitLxNiSjUzTmBxYzp4rZzdKQ8kQX2N37N8sSyqy3C8C0BbA==
   dependencies:
-    "@alinea/core" "0.1.18"
-    "@alinea/dashboard" "0.1.18"
-    "@alinea/editor" "0.1.18"
-    "@alinea/input.check" "0.1.18"
-    "@alinea/input.link" "0.1.18"
-    "@alinea/input.text" "0.1.18"
-    "@alinea/shared" "0.1.18"
-    "@alinea/ui" "0.1.18"
+    "@alinea/core" "0.2.0"
+    "@alinea/editor" "0.2.0"
+    "@alinea/ui" "0.2.0"
+
+"@alinea/input.richtext@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/input.richtext/-/input.richtext-0.2.0.tgz#03e33a24a6c20e05fe9bde795f81a8240b9de001"
+  integrity sha512-+qY8/B4zL3zUYZcgpixhWg4boJgY88m3rjYiFofJEi33C3rJc1Ww9DF3CA3IXtpYFNQcraVxLCwD+1pM5Z1pOg==
+  dependencies:
+    "@alinea/core" "0.2.0"
+    "@alinea/dashboard" "0.2.0"
+    "@alinea/editor" "0.2.0"
+    "@alinea/input.check" "0.2.0"
+    "@alinea/input.link" "0.2.0"
+    "@alinea/input.text" "0.2.0"
+    "@alinea/picker.entry" "0.2.0"
+    "@alinea/picker.url" "0.2.0"
+    "@alinea/shared" "0.2.0"
+    "@alinea/ui" "0.2.0"
     yjs "^13.5.39"
 
-"@alinea/input.select@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/input.select/-/input.select-0.1.18.tgz#3aa50af1e7a8dca1e80bee2d6ddc9e825709632a"
-  integrity sha512-VgzPWKJWwFF/1gD/RCHFOPXGDExZo9eqL/zPdZ17rZhfC7Se7HLE6q8cgt/foysZBAv2OVe6Kd84sxoKJdKyPw==
+"@alinea/input.select@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/input.select/-/input.select-0.2.0.tgz#1a4a867c8b129a28f405e8ef8e78dc9e09ae36ec"
+  integrity sha512-qwV8VAl60lgirk7SChv8JT23ABKiRnCxSZcKY6mGxBttk1zIDl7hr6Fyf5oRl0Tg2NekyJLoL0qA94U1VQfQeQ==
   dependencies:
-    "@alinea/core" "0.1.18"
-    "@alinea/editor" "0.1.18"
-    "@alinea/shared" "0.1.18"
-    "@alinea/ui" "0.1.18"
+    "@alinea/core" "0.2.0"
+    "@alinea/editor" "0.2.0"
+    "@alinea/shared" "0.2.0"
+    "@alinea/ui" "0.2.0"
 
-"@alinea/input.tabs@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/input.tabs/-/input.tabs-0.1.18.tgz#e862ae5b053075595c29757d214cc178216921eb"
-  integrity sha512-ZbBNXZdt5EA0+zGT7cZkzBD9Asfx2t9Axxftus3bWmq6drF5QIjAk25WG8ofr67dw5SneHexX9TgXhIdqkaQtw==
+"@alinea/input.tabs@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/input.tabs/-/input.tabs-0.2.0.tgz#dac349073df35908a96538bd792b5f9c98bd7c60"
+  integrity sha512-Yo3zdwNAnTOCOJNIQ5qsi5aUQSNfs01sX63xbeBpPR0i7sIOnS+jkFhXZ7Pl1/d+Z99LuTnAhLs73JHgb4MCvw==
   dependencies:
-    "@alinea/core" "0.1.18"
-    "@alinea/editor" "0.1.18"
-    "@alinea/ui" "0.1.18"
+    "@alinea/core" "0.2.0"
+    "@alinea/editor" "0.2.0"
+    "@alinea/ui" "0.2.0"
 
-"@alinea/input.text@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/input.text/-/input.text-0.1.18.tgz#1fe242b303a8375d012bdf84df7094024e85c5e6"
-  integrity sha512-x3r8K/YoYmy562l2vS2Xv6Bt2cdgX7nGi5zN7nWXMR/EkhdyvvrJjjehk/FNYavnqDhgm2O7FzlOj2Uxiph9Ig==
+"@alinea/input.text@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/input.text/-/input.text-0.2.0.tgz#fb39e1e12532757645cfeb83bac773a533569461"
+  integrity sha512-5AEEzY3qQHNl0EIWSlKwDbQAI4LrixCNMPsUES4sg1+8t3moDZRSd1utXO53wYKByknJylaQfJn2SMxq9niu5g==
   dependencies:
-    "@alinea/core" "0.1.18"
-    "@alinea/editor" "0.1.18"
-    "@alinea/ui" "0.1.18"
+    "@alinea/core" "0.2.0"
+    "@alinea/editor" "0.2.0"
+    "@alinea/ui" "0.2.0"
 
-"@alinea/iso@^0.1.18", "@alinea/iso@^0.1.6":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/iso/-/iso-0.1.18.tgz#09a4a021be29a557dc71cd4b4d06bcf5afc82ed0"
-  integrity sha512-UzL9F4TEmsONl5dFqGnD6O8arXAjTheGhqmkO0S6YyiZPBGXVwal3g1t4Es4edDsNFLDfpf6dQbkglqyxr+2Ug==
+"@alinea/iso@*", "@alinea/iso@^0.1.21":
+  version "0.1.21"
+  resolved "https://registry.yarnpkg.com/@alinea/iso/-/iso-0.1.21.tgz#f1d9c3a1115ab6e615e4245cc5fad4724c9f4f2d"
+  integrity sha512-+0P5WcoCZy4GgssBOWkJJrGy/ZFGGaxzTk/bwYhDRn9BXbsVhi3uxYaxO1cSoiBZq+/+5lk24bNCI/SEdAfQhw==
 
-"@alinea/preview@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/preview/-/preview-0.1.18.tgz#290eb3278e2df2fcb354576bd70711adf02deebf"
-  integrity sha512-ssdYvNOcTuZoHPlRDRTRLmpXRvONVg3Hpw17HwkEuk6aw0BwS8oBNGlAMylLKRqdppOJqmcSbSm4fRstamOqFg==
-
-"@alinea/shared@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/shared/-/shared-0.1.18.tgz#f469da09a3c7245e2d468f5dd3d4fbf94a6ec311"
-  integrity sha512-jwTJAPzT8+vibLdy7CjYEeBvt0pmSlKmET8mKmqCOpxsrWh+DfgENdYQlK3mfTQDQlBKu0EdR61ma6uT6rX8yA==
-
-"@alinea/sqlite-wasm@^0.1.7":
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/@alinea/sqlite-wasm/-/sqlite-wasm-0.1.9.tgz#2c19bd81c07b83273b90bbdb983c859269815f63"
-  integrity sha512-cp5KvtOcWO2aeZHYml/YYlu1KKWj4Um4A9BgRskRRewkmMyyClAlW4bBnsATYaFZPV8/L99AhK6KlRh1+d0Cxw==
+"@alinea/picker.entry@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/picker.entry/-/picker.entry-0.2.0.tgz#08195aab28b0f3b12ecfa39d3ea2fc8102cfc112"
+  integrity sha512-fmLTlmnvEIX+ynGOqWiHVNEAvntOQ51+eUNQTF5rQwEVT6Utx6eX7q+UaBB4GDg5d5HhP5c6Qrk2+1C0UA/tTw==
   dependencies:
-    "@alinea/iso" "^0.1.6"
+    "@alinea/core" "0.2.0"
+    "@alinea/dashboard" "0.2.0"
+    "@alinea/editor" "0.2.0"
+    "@alinea/ui" "0.2.0"
 
-"@alinea/store@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/store/-/store-0.1.18.tgz#447667f43aff784b1e6ebcad941aee60062c47c7"
-  integrity sha512-OZ4kYANXUQBghIhD6SyNnk3YLjyeLMUfMYIgP7vcRK+Rq1QdXWR3TZV5lroOQs9TnlPkU9F32qR7LenXw/Du4Q==
-
-"@alinea/ui@0.1.18":
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/@alinea/ui/-/ui-0.1.18.tgz#6ba5c0f7fac61c1b1a505c9dd59ba1921636afa0"
-  integrity sha512-ZMLLhBn4uHVJNsJ+dT9Oq37KZUEuajpj2rcUeaXvTwCu6YXmcgO6RzrFVuhYPUBGhNUuX5g2rj2kdMEBM2XM1g==
+"@alinea/picker.url@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/picker.url/-/picker.url-0.2.0.tgz#b7f2edfc9e11c42bc32e77ca738be228d54135b9"
+  integrity sha512-BlmbdwW2weIo5vnP2XZLnhjBvHQzsRKm4OEKWmFQf3R9i/KLKWy22BUx7JM7XCOaO99g1gjjS3wUzrO35BnHkw==
   dependencies:
-    "@alinea/core" "0.1.18"
-    "@alinea/shared" "0.1.18"
+    "@alinea/core" "0.2.0"
+    "@alinea/editor" "0.2.0"
+    "@alinea/input.check" "0.2.0"
+    "@alinea/input.text" "0.2.0"
+    "@alinea/ui" "0.2.0"
+
+"@alinea/preview@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/preview/-/preview-0.2.0.tgz#4d8d3694173bdb2c665b58bfcd9070ee32345d78"
+  integrity sha512-xDRDQGUoAhOqk9eit7d0vVsvrBJQw3sanJhkwaX68ZXpbWEDKMQf7naXl3aLjd0/fLFPU1hC5o48t90NJceOTw==
+
+"@alinea/shared@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/shared/-/shared-0.2.0.tgz#148068797e8410338c4b3c044ba0faf0714b838b"
+  integrity sha512-vgwqgQYtJMci9wEanng2QrotqrWez7NoIR8i1TUgu9pH0sPyWn8s8bqnqcxHxB+skqU9Q1Br3dxrwdDq+ulZoA==
+
+"@alinea/sqlite-wasm@^0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@alinea/sqlite-wasm/-/sqlite-wasm-0.1.10.tgz#7da47b439553c06bd6168d9b9c2a971307dcb5b7"
+  integrity sha512-/5Qok3JsTDywWV4CgMpSaBFmsrb/v5wqsg2DOfXbloZjTYHz6LlaSiCOSouHrotpWUTpX7Q0yUB6Zw+sSZzNog==
+  dependencies:
+    "@alinea/iso" "*"
+
+"@alinea/store@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/store/-/store-0.2.0.tgz#2aeb26048f6be35a347fc2b714b7388f8a64eca3"
+  integrity sha512-4+cOm0Fj2PPPAxNg+knmZi/HHZacnw5IUFDyQVB0HCvPvCYgOsLm6b5EoTyB0s7Sx2B1WMOjFuUkN6x1t6umWg==
+
+"@alinea/ui@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@alinea/ui/-/ui-0.2.0.tgz#e35caddc4c6cc6f84a292b8a052175cecf701318"
+  integrity sha512-g2Bi6QYrybFI5AfphytkvwDpFRHuEj4xW4JdYdzIkDfb2YmarByjvpg6kHLubyMb0M5ntUe44A+/6hT6ClYRCw==
+  dependencies:
+    "@alinea/core" "0.2.0"
+    "@alinea/shared" "0.2.0"
 
 "@babel/runtime-corejs3@^7.10.2":
   version "7.17.9"
@@ -548,31 +594,31 @@ ajv@^6.10.0, ajv@^6.12.4:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-alinea@^0.1.18:
-  version "0.1.18"
-  resolved "https://registry.yarnpkg.com/alinea/-/alinea-0.1.18.tgz#335001b9fda16d6539ce3ec107525623ab2ffbfa"
-  integrity sha512-0w7g2pclgoOyDZVVIV4PEgK3KJTGv24SZ1Gz+IjikyFfkvm/Xp51V2HqepqRRylyaKDJ/GwZnHowUqPOeJYvFg==
+alinea@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/alinea/-/alinea-0.2.0.tgz#0a5436b822310dfd3ec35d6a26745de84f254699"
+  integrity sha512-mfq6BAk+bOvS1y6tsw8U7C2lNe91bp5EwRVHjsewWDJteVrQ3o9hq3h+ly+2l3UEbhNVgRCNbJnx9WSdDF2XDQ==
   dependencies:
-    "@alinea/cli" "0.1.18"
-    "@alinea/cloud" "0.1.18"
-    "@alinea/core" "0.1.18"
-    "@alinea/css" "0.1.18"
-    "@alinea/dashboard" "0.1.18"
-    "@alinea/input.check" "0.1.18"
-    "@alinea/input.code" "0.1.18"
-    "@alinea/input.date" "0.1.18"
-    "@alinea/input.link" "0.1.18"
-    "@alinea/input.list" "0.1.18"
-    "@alinea/input.number" "0.1.18"
-    "@alinea/input.object" "0.1.18"
-    "@alinea/input.path" "0.1.18"
-    "@alinea/input.richtext" "0.1.18"
-    "@alinea/input.select" "0.1.18"
-    "@alinea/input.tabs" "0.1.18"
-    "@alinea/input.text" "0.1.18"
-    "@alinea/sqlite-wasm" "^0.1.7"
-    "@alinea/store" "0.1.18"
-    "@alinea/ui" "0.1.18"
+    "@alinea/cli" "0.2.0"
+    "@alinea/cloud" "0.2.0"
+    "@alinea/core" "0.2.0"
+    "@alinea/css" "0.2.0"
+    "@alinea/dashboard" "0.2.0"
+    "@alinea/input.check" "0.2.0"
+    "@alinea/input.code" "0.2.0"
+    "@alinea/input.date" "0.2.0"
+    "@alinea/input.json" "0.2.0"
+    "@alinea/input.link" "0.2.0"
+    "@alinea/input.list" "0.2.0"
+    "@alinea/input.number" "0.2.0"
+    "@alinea/input.object" "0.2.0"
+    "@alinea/input.path" "0.2.0"
+    "@alinea/input.richtext" "0.2.0"
+    "@alinea/input.select" "0.2.0"
+    "@alinea/input.tabs" "0.2.0"
+    "@alinea/input.text" "0.2.0"
+    "@alinea/sqlite-wasm" "^0.1.10"
+    "@alinea/ui" "0.2.0"
 
 ansi-regex@^5.0.1:
   version "5.0.1"

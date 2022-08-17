@@ -1,4 +1,5 @@
 import {createCloudBackend} from '@alinea/cloud'
+import {MediaSchema} from '@alinea/dashboard/schema/MediaSchema'
 import {IcRoundInsertDriveFile} from '@alinea/ui/icons/IcRoundInsertDriveFile'
 import {IcRoundPermMedia} from '@alinea/ui/icons/IcRoundPermMedia'
 import alinea, {BrowserPreview} from 'alinea'
@@ -10,7 +11,7 @@ export const config = alinea.createConfig({
 			source: './content',
 			mediaDir: './public',
 			schema: alinea.schema({
-				...alinea.MediaSchema,
+				...MediaSchema,
 				Page: alinea.type('Page', {
 					title: alinea.text('Title'),
 					path: alinea.path('Path'),

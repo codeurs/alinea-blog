@@ -9,6 +9,8 @@ export async function relatedSectionQuery(
 	const posts: Article[] = await pages.whereType('Article')
 	posts.sort((a, b) => a.index.localeCompare(b.index))
 
+	console.log(block)
+
 	return {
 		...block,
 		posts: posts.slice(0, 2).map((post) => {

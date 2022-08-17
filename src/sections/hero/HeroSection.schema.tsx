@@ -1,14 +1,14 @@
 import {Schema, type} from '@alinea/core'
-import {link, list, richText, schema, select, text} from 'alinea'
+import alinea from 'alinea'
 
 export const HeroSectionSchema = type('Hero', {
-	title: text('Title'),
-	intro: richText('Intro'),
-	image: link.image('Image', {type: 'image', max: 1}),
-	buttons: list('CTA buttons', {
-		schema: schema({
+	title: alinea.text('Title'),
+	intro: alinea.richText('Intro'),
+	image: alinea.link.image('Image', {type: 'image', max: 1}),
+	buttons: alinea.list('CTA buttons', {
+		schema: alinea.schema({
 			CTA: type('Button', {
-				mode: select(
+				mode: alinea.select(
 					'Mode',
 					{
 						primary: 'Primary',
@@ -19,11 +19,11 @@ export const HeroSectionSchema = type('Hero', {
 						optional: false
 					}
 				),
-				label: text('Label', {
+				label: alinea.text('Label', {
 					inline: true,
 					width: 0.4
 				}),
-				link: link('Link', {
+				link: alinea.link('Link', {
 					type: ['entry', 'external'],
 					max: 1,
 					width: 0.6,

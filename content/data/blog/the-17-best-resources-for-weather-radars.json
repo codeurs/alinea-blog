@@ -4,9 +4,6 @@
   "root": "data",
   "index": "a1",
   "title": "The 17 best resources for weather radars",
-  "parents": [
-    "28kKPK8g4XHE4BgkOKhCqDj99pO"
-  ],
   "date": "3 Jan 2022",
   "tag": "Analysis",
   "sections": [
@@ -18,6 +15,7 @@
       "intro": [
         {
           "type": "paragraph",
+          "textAlign": "left",
           "content": [
             {
               "type": "text",
@@ -43,6 +41,7 @@
       "text": [
         {
           "type": "paragraph",
+          "textAlign": "left",
           "content": [
             {
               "type": "text",
@@ -86,7 +85,21 @@
       "id": "28lq4tV15rBIT652sE6uce32TRf",
       "index": "a2",
       "type": "Related",
-      "title": "Related"
+      "title": "Related",
+      "date": [
+        {
+          "id": "B0wY1TZmk5uhCnNgEYVZt",
+          "index": "a0",
+          "type": "entry",
+          "entry": "28ljjc5JbfFGO40bz6NwfasIO0p"
+        },
+        {
+          "id": "AivlBqTBk_XDOe8AiXYqP",
+          "index": "a1",
+          "type": "entry",
+          "entry": "28ljZP1MrzKQ4uifq6W6k1BA1u0"
+        }
+      ]
     }
   ]
 }
