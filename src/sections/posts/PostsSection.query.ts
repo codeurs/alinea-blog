@@ -1,13 +1,13 @@
-import {Article, Pages} from '@alinea/content/main'
-import {HeroSectionSchema} from '../hero/HeroSection.schema'
-import {PostsSectionSchema} from './PostsSection.schema'
+import { Article, Pages } from '@alinea/content/main'
+import { HeroSectionSchema } from '../hero/HeroSection.schema'
+import { PostsSectionSchema } from './PostsSection.schema'
 
 export async function postsSectionQuery(
 	pages: Pages,
 	block: PostsSectionSchema
 ) {
 	const posts: Article[] = await pages.whereType('Article')
-	posts.sort((a, b) => a.index.localeCompare(b.index))
+	posts.sort((a, b) => a.alinea.index.localeCompare(b.alinea.index))
 
 	return {
 		...block,

@@ -7,7 +7,7 @@ export async function relatedSectionQuery(
 	block: RelatedSectionSchema
 ) {
 	const posts: Article[] = await pages.whereType('Article')
-	posts.sort((a, b) => a.index.localeCompare(b.index))
+	posts.sort((a, b) => a.alinea.index.localeCompare(b.alinea.index))
 
 	console.log(block)
 
