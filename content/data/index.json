@@ -1,15 +1,13 @@
 {
   "id": "0f8ETDYiBRw2mIukujw7f",
   "type": "Page",
-  "root": "data",
-  "index": "Zs",
   "title": "Welcome",
   "sections": [
     {
       "id": "VsavCdLM6W_xeUxMN28mk",
       "index": "a0",
       "type": "Hero",
-      "title": "Alinea example blog -  Test",
+      "title": "Alinea example blog on Azure",
       "intro": [
         {
           "type": "paragraph",
@@ -48,5 +46,9 @@
         }
       ]
     }
-  ]
+  ],
+  "alinea": {
+    "index": "Zs",
+    "root": "data"
+  }
 }
